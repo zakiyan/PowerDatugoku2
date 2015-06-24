@@ -16,6 +16,6 @@ public class TimeManagar : MonoBehaviour {
 	void Update () {
 
 		Timer += Time.deltaTime;
-		TimeText.text = "経過時間" + (int)Timer;
+		TimeText.text = "" + Timer.ToString("f2");;
 	}
 }
