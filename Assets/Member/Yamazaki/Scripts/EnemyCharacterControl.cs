@@ -1,14 +1,14 @@
 ﻿using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
-{
+//namespace UnityStandardAssets.Characters.ThirdPerson
+//{
 	[RequireComponent(typeof (NavMeshAgent))]
-	[RequireComponent(typeof (ThirdPersonCharacter))]
+	[RequireComponent(typeof (EnemyCharacter))]
 	public class EnemyCharacterControl : MonoBehaviour
 	{
 		public NavMeshAgent agent { get; private set; } // the navmesh agent required for the path finding
-		public ThirdPersonCharacter character { get; private set; } // the character we are controlling
+		public EnemyCharacter character { get; private set; } // the character we are controlling
 		public Transform target; // target to aim for
 		
 		// Use this for initialization
@@ -16,7 +16,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			// get the components on the object we need ( should not be null due to require component so no need to check )
 			agent = GetComponentInChildren<NavMeshAgent>();
-			character = GetComponent<ThirdPersonCharacter>();
+			character = GetComponent<EnemyCharacter>();
 			
 			agent.updateRotation = false;
 			agent.updatePosition = true;
@@ -51,4 +51,4 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			this.target = target;
 		}
 	}
-}
+//}
