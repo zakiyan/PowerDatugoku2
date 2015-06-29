@@ -7,15 +7,16 @@ public class TimeManagar : MonoBehaviour {
 	public float Timer = 0f;
 	//スコア表示するテキストをインスペクター上からアタッチ
 	public Text TimeText;
-
-	void Start () {
 	
+	void Start () {
+		
 	}
 	
-
+	
 	void Update () {
-
+		
 		Timer += Time.deltaTime;
-		TimeText.text = "" + Timer.ToString("f2");;
+		TimeText.text =  ((int)(Timer/60)).ToString("00")+"分" 
+			+ (((int)Timer)%60).ToString("00") + "秒" ;
 	}
 }
