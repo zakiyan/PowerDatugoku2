@@ -15,8 +15,8 @@ public class TimeManagar : MonoBehaviour {
 	
 	void Update () {
 		
-		Timer += Time.deltaTime;
-		TimeText.text =  ((int)(Timer/60)).ToString("00")+"分" 
-			+ (((int)Timer)%60).ToString("00") + "秒" ;
+//		Timer += Time.deltaTime;
+//		TimeText.text =  ((int)(Timer/60)).ToString("00")+"分" 
+//			+ (((int)Timer)%60).ToString("00") + "秒" ;
 	}
 }
