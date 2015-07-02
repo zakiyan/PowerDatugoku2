@@ -21,10 +21,11 @@ public class Goal1 : MonoBehaviour {
 	void OnCollisionEnter(Collision c)
 	{
 		//result.SetActive (true);
-		score.Save ();
+		//score.Save ();
 		//Time.timeScale = 0;
 		Debug.Log ("Goal");
 		anim.SetBool ("Touch", true);
+		Invoke ("GoMenu",2f);
 		//score.ToResult ();
 	}
 	void GoMenu()
