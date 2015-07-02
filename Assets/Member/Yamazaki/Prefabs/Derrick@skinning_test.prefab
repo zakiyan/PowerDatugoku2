@@ -2074,7 +2074,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191104}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: f076104eb4fb48544be676fa42f33b7b, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 2b61bd4d3d4ae084f98d72b35226a81a, type: 3}
   m_Controller: {fileID: 9100000, guid: 65ef7f92f2480c64d830fcbaebcdd05c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -2108,12 +2108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovingTurnSpeed: 360
   m_StationaryTurnSpeed: 180
-  m_JumpPower: 12
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: .200000003
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: .100000001
 --- !u!136 &13639850
 CapsuleCollider:
   m_ObjectHideFlags: 1
