@@ -20,7 +20,7 @@ AnimatorController:
     m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
 --- !u!1102 &110215942
 AnimatorState:
   serializedVersion: 5
@@ -39,7 +39,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: dea37cbc0d6be1a4a88f962c31b294e2, type: 2}
+  m_Motion: {fileID: 7400000, guid: b4ac5edb10c6a8f4b85f148e97e1dadb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
