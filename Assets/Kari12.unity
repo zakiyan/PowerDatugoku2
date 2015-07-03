@@ -86,7 +86,7 @@ NavMeshSettings:
     minRegionArea: 2
     cellSize: .166666672
     manualCellSize: 0
-  m_NavMeshData: {fileID: 23800000, guid: 85649c0d7dc8fae4fb4f0ee4dd528cf9, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &7337368
 GameObject:
   m_ObjectHideFlags: 0
@@ -5141,7 +5141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d3c8b3aed696d408d07a063421d1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 0
   TimeText: {fileID: 474773011}
 --- !u!4 &1980982407
 Transform:
