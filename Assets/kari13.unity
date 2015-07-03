@@ -76,15 +76,15 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: .300000012
+    agentRadius: .200000003
     agentHeight: 2
     agentSlope: 45
-    agentClimb: .400000006
+    agentClimb: .899999976
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    cellSize: .100000001
+    cellSize: .0666666701
     manualCellSize: 0
   m_NavMeshData: {fileID: 23800000, guid: 0db534b354a79174d91429bd06289365, type: 2}
 --- !u!1 &7337368
@@ -4836,7 +4836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d3c8b3aed696d408d07a063421d1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 0
   TimeText: {fileID: 474773011}
 --- !u!4 &1980982407
 Transform:
