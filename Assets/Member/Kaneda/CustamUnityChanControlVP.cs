@@ -185,11 +185,23 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 
 	public void Punch()
 	{
-		anim.SetBool("Punch",true);
+		if (!anim.GetBool ("Punch")) {
+			anim.SetBool ("Punch", true);
+		} else {
+			anim.SetBool ("Punch2", true);
+		}
 
 	}
 	public void PunchFinish()
 	{
+		if (!anim.GetBool ("Punch2")) {
+			anim.SetBool ("Punch", false);
+		}
+	}
+
+	public void PunchFinish2()
+	{
 		anim.SetBool("Punch",false);
+		anim.SetBool("Punch2",false);
 	}
 }
