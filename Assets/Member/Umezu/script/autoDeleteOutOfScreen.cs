@@ -8,11 +8,11 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 	public float margin = 0.8f; //マージン(画面外に出てどれくらい離れたら消えるか)を指定
 	float negativeMargin;
 	float positiveMargin;
-	
+
 	void Start ()
 	{
 		if (_setCamera == null) {
-			_setCamera = Camera.main;
+			_setCamera = GameObject.Find ("SoundCamera").GetComponent<Camera> ();
 		}
 		
 		negativeMargin = 0 - margin;
@@ -23,6 +23,7 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 	void Update () 
 	{
 		if (this.isOutOfScreen()) {
+
 			Destroy (gameObject);
 		}
 	}
