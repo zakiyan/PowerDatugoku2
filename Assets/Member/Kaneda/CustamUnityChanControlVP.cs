@@ -187,8 +187,10 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	{
 		if (!anim.GetBool ("Punch")) {
 			anim.SetBool ("Punch", true);
-		} else {
+		} else if (!anim.GetBool ("Punch2")) {
 			anim.SetBool ("Punch2", true);
+		} else {
+			anim.SetBool ("Kick", true);
 		}
 
 	}
@@ -201,7 +203,15 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 
 	public void PunchFinish2()
 	{
+		if (!anim.GetBool ("Kick")) {
+			anim.SetBool ("Punch", false);
+			anim.SetBool ("Punch2", false);
+		}
+	}
+	public void KickFinish()
+	{
 		anim.SetBool("Punch",false);
 		anim.SetBool("Punch2",false);
+		anim.SetBool("Kick",false);
 	}
 }
