@@ -2674,7 +2674,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 472876, guid: 8fd120cc74cd2ce4ca4f3aef0a4732ca, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 183606, guid: 8fd120cc74cd2ce4ca4f3aef0a4732ca, type: 2}
       propertyPath: m_Name
@@ -3303,7 +3303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  hitpoint: {fileID: 140962, guid: ba2bddafa608eb943a77c034cd73dbd8, type: 2}
+  hitpoint: {fileID: 127258, guid: 6afaf5fe07561d14bb1dd013536e5985, type: 2}
   MakePoint: 20
   x: 0
   y: 0
@@ -3494,6 +3494,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1186050044
 Transform:
   m_ObjectHideFlags: 0
@@ -4444,6 +4445,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &1510520789
 MonoBehaviour:
@@ -6041,6 +6043,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1646903597
 Transform:
   m_ObjectHideFlags: 0
@@ -6745,6 +6748,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1849085285
 Transform:
   m_ObjectHideFlags: 0
@@ -7002,7 +7006,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480674, guid: 77f7223408d944045a08cfbbd3ff73fe, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 182800, guid: 77f7223408d944045a08cfbbd3ff73fe, type: 2}
       propertyPath: m_Name
