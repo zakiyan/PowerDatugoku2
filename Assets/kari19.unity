@@ -5971,7 +5971,6 @@ GameObject:
   - 124: {fileID: 1646903595}
   - 92: {fileID: 1646903594}
   - 114: {fileID: 1646903593}
-  - 81: {fileID: 1646903591}
   m_Layer: 9
   m_Name: SoundCamera
   m_TagString: Untagged
@@ -5979,13 +5978,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1646903591
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1646903590}
-  m_Enabled: 1
 --- !u!114 &1646903593
 MonoBehaviour:
   m_ObjectHideFlags: 0
