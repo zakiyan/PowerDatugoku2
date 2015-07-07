@@ -1065,8 +1065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 086378b08972d0346835c197d3d2985d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 0}
-  scene: KMenu
 --- !u!95 &670415921
 Animator:
   serializedVersion: 3
@@ -2164,6 +2162,7 @@ GameObject:
   - 224: {fileID: 1239146323}
   - 222: {fileID: 1239146325}
   - 114: {fileID: 1239146324}
+  - 95: {fileID: 1239146326}
   m_Layer: 5
   m_Name: ResultClearedText
   m_TagString: Untagged
@@ -2177,7 +2176,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239146322}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: .0494724475, w: .998775482}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2215,6 +2214,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239146322}
+--- !u!95 &1239146326
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239146322}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6270ea5e2a4172e46a839e0554697d66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1240870654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,7 +3952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d3c8b3aed696d408d07a063421d1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeText: {fileID: 474773011}
 --- !u!4 &1980982407
 Transform:
   m_ObjectHideFlags: 0
