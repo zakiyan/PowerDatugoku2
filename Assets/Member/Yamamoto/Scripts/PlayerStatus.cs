@@ -4,10 +4,11 @@ using System.Collections;
 public class PlayerStatus : MonoBehaviour {
 
 	Score score;
+	EnemyStatus enemyStatus;
 
 	public int level = 1;
 	public int maxHp = 10;
-	public int hp = 10;
+	public float playerHp = 10;
 	public float playerPower = 1f;
 	public float speed = 5f;
 	public int lvUpExp = 0;
@@ -16,6 +17,7 @@ public class PlayerStatus : MonoBehaviour {
 	void Start () {
 
 		score = FindObjectOfType<Score> ();
+		enemyStatus = FindObjectOfType<EnemyStatus> ();
 	}
 	
 	// Update is called once per frame
@@ -27,11 +29,26 @@ public class PlayerStatus : MonoBehaviour {
 
 			level += 1;
 			maxHp += 2;
-			hp = maxHp;
+			playerHp = maxHp;
 			playerPower += 0.2f;
 			if(level % 2 == 0)
 			{
 				speed += 1f;
+			}
+		}
+	}
+
+	void OnTriggerEnter(Collider c)
+	{
+		string layerName = LayerMask.LayerToName (c.gameObject.layer);
+		
+		if (layerName == "EnemyAttack") {
+			
+			playerHp -= enemyStatus.enemyPower;
+			
+			if (playerHp <= 0) {
+				
+				Destroy (gameObject);
 			}
 		}
 	}

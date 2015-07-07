@@ -504,12 +504,13 @@ Transform:
 --- !u!114 &369195212
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: cfef738579cd02c40b3b1d63e67b0f84,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 369195210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1a99f6faa5c4d4f88658241f7fddc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 086378b08972d0346835c197d3d2985d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   result: {fileID: 0}
@@ -1052,7 +1053,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 670415919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1a99f6faa5c4d4f88658241f7fddc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 086378b08972d0346835c197d3d2985d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   result: {fileID: 0}
@@ -1842,7 +1843,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1851283207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dff338324bca12645a3b481e909f0500, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e28d221ef18a754f92e21eb7bc589b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animSpeed: 1
@@ -5695,7 +5696,7 @@ Animator:
   m_GameObject: {fileID: 1851283207}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8bdc2a7349c1aec4fb305621cb5553dd, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8fac1bd33050809449ed0a40f46ef30d, type: 2}
+  m_Controller: {fileID: 9100000, guid: f8805f68fa621cd499bea455e07c584a, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5979,7 +5980,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1980982405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd7654697aa48634e846dc86cd4060db, type: 3}
+  m_Script: {fileID: 11500000, guid: 35d3c8b3aed696d408d07a063421d1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TimeText: {fileID: 1824594828}

@@ -5,8 +5,9 @@ public class EnemyStatus : MonoBehaviour {
 
 	Score score;
 	PlayerStatus playerStatus;
+	Animator anim;
 
-	public float hp = 4;
+	public float enemyHp = 4;
 	public float enemyPower = 1;
 
 	// Use this for initialization
@@ -14,6 +15,8 @@ public class EnemyStatus : MonoBehaviour {
 
 		score = FindObjectOfType<Score>();
 		playerStatus = FindObjectOfType<PlayerStatus>();
+		anim = GetComponent<Animator> ();
+
 	}
 	
 	// Update is called once per frame
@@ -27,12 +30,13 @@ public class EnemyStatus : MonoBehaviour {
 
 		if (layerName == "PlayerAttack") {
 
-			hp -= playerStatus.playerPower;
+			enemyHp -= playerStatus.playerPower;
 
-			if (hp <= 0) {
+			if (enemyHp <= 0) {
 
 				score.ScoreUp ();
-				Destroy (gameObject);
+				anim.SetBool("Down", true);
+				//Destroy (gameObject);
 			}
 		}
 	}

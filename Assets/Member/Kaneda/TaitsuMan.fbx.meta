@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 1b64a37c2734ed64fa3c5c0b66b36e1b
+timeCreated: 1436181109
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Beast_Hi
+    100002: BeastBaseMesh:Head
+    100004: BeastBaseMesh:HeadTop_End
+    100006: BeastBaseMesh:Hips
+    100008: BeastBaseMesh:LeftArm
+    100010: BeastBaseMesh:LeftFoot
+    100012: BeastBaseMesh:LeftForeArm
+    100014: BeastBaseMesh:LeftHand
+    100016: BeastBaseMesh:LeftHandIndex1
+    100018: BeastBaseMesh:LeftHandIndex2
+    100020: BeastBaseMesh:LeftHandIndex3
+    100022: BeastBaseMesh:LeftHandIndex4
+    100024: BeastBaseMesh:LeftHandMiddle1
+    100026: BeastBaseMesh:LeftHandMiddle2
+    100028: BeastBaseMesh:LeftHandMiddle3
+    100030: BeastBaseMesh:LeftHandMiddle4
+    100032: BeastBaseMesh:LeftHandPinky1
+    100034: BeastBaseMesh:LeftHandPinky2
+    100036: BeastBaseMesh:LeftHandPinky3
+    100038: BeastBaseMesh:LeftHandPinky4
+    100040: BeastBaseMesh:LeftHandRing1
+    100042: BeastBaseMesh:LeftHandRing2
+    100044: BeastBaseMesh:LeftHandRing3
+    100046: BeastBaseMesh:LeftHandRing4
+    100048: BeastBaseMesh:LeftHandThumb1
+    100050: BeastBaseMesh:LeftHandThumb2
+    100052: BeastBaseMesh:LeftHandThumb3
+    100054: BeastBaseMesh:LeftHandThumb4
+    100056: BeastBaseMesh:LeftLeg
+    100058: BeastBaseMesh:LeftShoulder
+    100060: BeastBaseMesh:LeftToe_End
+    100062: BeastBaseMesh:LeftToeBase
+    100064: BeastBaseMesh:LeftUpLeg
+    100066: BeastBaseMesh:Neck
+    100068: BeastBaseMesh:RightArm
+    100070: BeastBaseMesh:RightFoot
+    100072: BeastBaseMesh:RightForeArm
+    100074: BeastBaseMesh:RightHand
+    100076: BeastBaseMesh:RightHandIndex1
+    100078: BeastBaseMesh:RightHandIndex2
+    100080: BeastBaseMesh:RightHandIndex3
+    100082: BeastBaseMesh:RightHandIndex4
+    100084: BeastBaseMesh:RightHandMiddle1
+    100086: BeastBaseMesh:RightHandMiddle2
+    100088: BeastBaseMesh:RightHandMiddle3
+    100090: BeastBaseMesh:RightHandMiddle4
+    100092: BeastBaseMesh:RightHandPinky1
+    100094: BeastBaseMesh:RightHandPinky2
+    100096: BeastBaseMesh:RightHandPinky3
+    100098: BeastBaseMesh:RightHandPinky4
+    100100: BeastBaseMesh:RightHandRing1
+    100102: BeastBaseMesh:RightHandRing2
+    100104: BeastBaseMesh:RightHandRing3
+    100106: BeastBaseMesh:RightHandRing4
+    100108: BeastBaseMesh:RightHandThumb1
+    100110: BeastBaseMesh:RightHandThumb2
+    100112: BeastBaseMesh:RightHandThumb3
+    100114: BeastBaseMesh:RightHandThumb4
+    100116: BeastBaseMesh:RightLeg
+    100118: BeastBaseMesh:RightShoulder
+    100120: BeastBaseMesh:RightToe_End
+    100122: BeastBaseMesh:RightToeBase
+    100124: BeastBaseMesh:RightUpLeg
+    100126: BeastBaseMesh:Spine
+    100128: BeastBaseMesh:Spine1
+    100130: BeastBaseMesh:Spine2
+    100132: //RootNode
+    400000: Beast_Hi
+    400002: BeastBaseMesh:Head
+    400004: BeastBaseMesh:HeadTop_End
+    400006: BeastBaseMesh:Hips
+    400008: BeastBaseMesh:LeftArm
+    400010: BeastBaseMesh:LeftFoot
+    400012: BeastBaseMesh:LeftForeArm
+    400014: BeastBaseMesh:LeftHand
+    400016: BeastBaseMesh:LeftHandIndex1
+    400018: BeastBaseMesh:LeftHandIndex2
+    400020: BeastBaseMesh:LeftHandIndex3
+    400022: BeastBaseMesh:LeftHandIndex4
+    400024: BeastBaseMesh:LeftHandMiddle1
+    400026: BeastBaseMesh:LeftHandMiddle2
+    400028: BeastBaseMesh:LeftHandMiddle3
+    400030: BeastBaseMesh:LeftHandMiddle4
+    400032: BeastBaseMesh:LeftHandPinky1
+    400034: BeastBaseMesh:LeftHandPinky2
+    400036: BeastBaseMesh:LeftHandPinky3
+    400038: BeastBaseMesh:LeftHandPinky4
+    400040: BeastBaseMesh:LeftHandRing1
+    400042: BeastBaseMesh:LeftHandRing2
+    400044: BeastBaseMesh:LeftHandRing3
+    400046: BeastBaseMesh:LeftHandRing4
+    400048: BeastBaseMesh:LeftHandThumb1
+    400050: BeastBaseMesh:LeftHandThumb2
+    400052: BeastBaseMesh:LeftHandThumb3
+    400054: BeastBaseMesh:LeftHandThumb4
+    400056: BeastBaseMesh:LeftLeg
+    400058: BeastBaseMesh:LeftShoulder
+    400060: BeastBaseMesh:LeftToe_End
+    400062: BeastBaseMesh:LeftToeBase
+    400064: BeastBaseMesh:LeftUpLeg
+    400066: BeastBaseMesh:Neck
+    400068: BeastBaseMesh:RightArm
+    400070: BeastBaseMesh:RightFoot
+    400072: BeastBaseMesh:RightForeArm
+    400074: BeastBaseMesh:RightHand
+    400076: BeastBaseMesh:RightHandIndex1
+    400078: BeastBaseMesh:RightHandIndex2
+    400080: BeastBaseMesh:RightHandIndex3
+    400082: BeastBaseMesh:RightHandIndex4
+    400084: BeastBaseMesh:RightHandMiddle1
+    400086: BeastBaseMesh:RightHandMiddle2
+    400088: BeastBaseMesh:RightHandMiddle3
+    400090: BeastBaseMesh:RightHandMiddle4
+    400092: BeastBaseMesh:RightHandPinky1
+    400094: BeastBaseMesh:RightHandPinky2
+    400096: BeastBaseMesh:RightHandPinky3
+    400098: BeastBaseMesh:RightHandPinky4
+    400100: BeastBaseMesh:RightHandRing1
+    400102: BeastBaseMesh:RightHandRing2
+    400104: BeastBaseMesh:RightHandRing3
+    400106: BeastBaseMesh:RightHandRing4
+    400108: BeastBaseMesh:RightHandThumb1
+    400110: BeastBaseMesh:RightHandThumb2
+    400112: BeastBaseMesh:RightHandThumb3
+    400114: BeastBaseMesh:RightHandThumb4
+    400116: BeastBaseMesh:RightLeg
+    400118: BeastBaseMesh:RightShoulder
+    400120: BeastBaseMesh:RightToe_End
+    400122: BeastBaseMesh:RightToeBase
+    400124: BeastBaseMesh:RightUpLeg
+    400126: BeastBaseMesh:Spine
+    400128: BeastBaseMesh:Spine1
+    400130: BeastBaseMesh:Spine2
+    400132: //RootNode
+    4300000: Beast_Hi
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: Beast_Hi
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
