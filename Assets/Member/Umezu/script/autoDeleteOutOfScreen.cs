@@ -25,7 +25,6 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 	{
 		if (this.isOutOfScreen()) {
 			//GameObject.Find("TestButton").color = Color.red;
-			GameObject.Find("particle_burst").GetComponent<ParticleSystem> ().Play ();
 
 			Destroy (gameObject);
 		}
@@ -33,7 +32,7 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 
 	}
 	
-	bool isOutOfScreen() 
+	public bool isOutOfScreen() 
 	{
 		Vector3 positionInScreen = _setCamera.WorldToViewportPoint(transform.position);
 		positionInScreen.z = transform.position.z;
@@ -48,12 +47,17 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 			return false;
 		}
 	}
-
+	//keep
 	public void Onclick(){
-		GameObject go = GameObject.Find("TestButton");
+		//GameObject go = GameObject.Find("TestButton");
+		print (this.isOutOfScreen());
+
 		if (this.isOutOfScreen()) {
-			
-			go.GetComponent<Image> ().color = Color.red;
+			//if(button){
+			print ("click");
+				GameObject.Find("particle_burst").GetComponent<ParticleSystem> ().Play ();
+			//}
+			//go.GetComponent<Image> ().color = Color.red;
 		}
 
 	}
