@@ -39,7 +39,8 @@ public class SongScanbar2 : MonoBehaviour {
 			volume =MakePoint;
 		}else{
 			//GetComponent<TrailRenderer>().enabled=false;
-			Instantiate(hitpoint,new Vector3( Time.time * speed+200+x,y+120,z+100), Quaternion.identity);
+
+			Instantiate(hitpoint,new Vector3( Time.time * speed+200+x,y+120,z+100), Quaternion.Euler(0,0,-90));
 		}
 
 		transform.position = new Vector3( Time.time * speed+100,volume+100,100);

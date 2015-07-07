@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class autoDeleteOutOfScreen : MonoBehaviour {
 	public Camera _setCamera;
@@ -8,7 +9,7 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 	public float margin = 0.8f; //マージン(画面外に出てどれくらい離れたら消えるか)を指定
 	float negativeMargin;
 	float positiveMargin;
-
+	bool button;
 	void Start ()
 	{
 		if (_setCamera == null) {
@@ -23,9 +24,13 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 	void Update () 
 	{
 		if (this.isOutOfScreen()) {
+			//GameObject.Find("TestButton").color = Color.red;
+			GameObject.Find("particle_burst").GetComponent<ParticleSystem> ().Play ();
 
 			Destroy (gameObject);
 		}
+
+
 	}
 	
 	bool isOutOfScreen() 
@@ -42,5 +47,14 @@ public class autoDeleteOutOfScreen : MonoBehaviour {
 		} else {
 			return false;
 		}
+	}
+
+	public void Onclick(){
+		GameObject go = GameObject.Find("TestButton");
+		if (this.isOutOfScreen()) {
+			
+			go.GetComponent<Image> ().color = Color.red;
+		}
+
 	}
 }
