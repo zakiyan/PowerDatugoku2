@@ -1587,7 +1587,7 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
-  Audiotime: -10000
+  Audiotime: -12000
   audioClip: {fileID: 8300000, guid: d82b33d7cbbb0574490f4fec0995f3de, type: 3}
   audioSource: {fileID: 1146236521}
 --- !u!23 &1146236525
@@ -1800,7 +1800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4eee67d38e24f4385f9a7fe43494d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 1
 --- !u!114 &1240870657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,6 +2283,7 @@ GameObject:
   - 222: {fileID: 1533723167}
   - 114: {fileID: 1533723166}
   - 114: {fileID: 1533723165}
+  - 114: {fileID: 1533723168}
   m_Layer: 5
   m_Name: TestButton
   m_TagString: Untagged
@@ -2359,8 +2359,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1533723166}
-        m_MethodName: SetNativeSize
+      - m_Target: {fileID: 1533723163}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2400,6 +2400,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1533723163}
+--- !u!114 &1533723168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533723163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2280a54aa904c734fa39e7dae2855526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1597611105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,6 +2972,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a810aa95387516847a9e1e86c71e6df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPos:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  touchPos: {x: 0, y: 0}
 --- !u!4 &2005298723
 Transform:
   m_ObjectHideFlags: 0
