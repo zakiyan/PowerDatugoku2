@@ -3829,9 +3829,9 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
-  Audiotime: -12000
   audioClip: {fileID: 8300000, guid: d82b33d7cbbb0574490f4fec0995f3de, type: 3}
   audioSource: {fileID: 1165885225}
+  Audiotime: -12000
 --- !u!23 &1165885229
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7779,7 +7779,7 @@ Animator:
   m_GameObject: {fileID: 1851283207}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8bdc2a7349c1aec4fb305621cb5553dd, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8fac1bd33050809449ed0a40f46ef30d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 464202fcbe7c30347af9d26dc768243b, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
