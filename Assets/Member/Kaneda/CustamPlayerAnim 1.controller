@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: CustamPlayerAnim
+  m_Name: CustamPlayerAnim 1
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -74,7 +74,7 @@ AnimatorController:
     m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
 --- !u!206 &20600000
 BlendTree:
   m_ObjectHideFlags: 3
@@ -653,11 +653,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-<<<<<<< HEAD
-  m_Motion: {fileID: 7400002, guid: 2204dc0c75f7e8242adc55251aa7f62f, type: 3}
-=======
   m_Motion: {fileID: 7400000, guid: 2204dc0c75f7e8242adc55251aa7f62f, type: 3}
->>>>>>> cfcbf9e606981ee14d062a183f2945d98fb3660d
   m_Tag: 
   m_SpeedParameter: Speed
   m_MirrorParameter: 
