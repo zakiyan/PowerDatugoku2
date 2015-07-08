@@ -11,7 +11,7 @@ public class Hitco : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	void OnCollisionEnter(Collision collision) {
@@ -23,13 +23,13 @@ public class Hitco : MonoBehaviour {
 		//			audio.Play(); 
 		
 		Match = true;
-		print ("1"+Match);
+		//print ("1"+Match);
 	}
 	
 	
 	public void OnClick() {
 		if(Match){
-			print (Match);
+			//print (Match);
 			GameObject.Find("particle_burst").GetComponent<ParticleSystem> ().Play ();
 			//Attack UPPPPPPPPPPPPPPP!
 		}

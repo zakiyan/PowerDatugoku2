@@ -16,10 +16,12 @@ public class Rthemhit : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		print (Match);
-		transform.position = new Vector3( Time.time * speed+x+195,y+120,z+100);
+		//print (Match);
+		transform.position = new Vector3( Time.time * speed+x+197,y+120,z+100);
+		Match = false;
 	}
-	void OnTriggerStay(Collider other) {
+	//void OnTriggerStay(Collider other) {
+	void OnTriggerEnter(Collider other) {
 //		foreach (ContactPoint contact in collision.contacts) {
 //			Debug.DrawRay(contact.point, contact.normal, Color.white);
 //		}
@@ -28,7 +30,7 @@ public class Rthemhit : MonoBehaviour {
 //			audio.Play(); 
 
 
-		print ("1"+Match);
+		//print ("1"+Match);
 
 		Match = true;
 	}
@@ -36,7 +38,7 @@ public class Rthemhit : MonoBehaviour {
 
 	public void OnClick() {
 		if(Match){
-			print (Match);
+			//print (Match);
 			GameObject.Find("particle_burst").GetComponent<ParticleSystem> ().Play ();
 			//Attack UPPPPPPPPPPPPPPP!
 	}
