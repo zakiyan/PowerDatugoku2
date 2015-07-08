@@ -11,6 +11,11 @@ public class SongScanbar2 : MonoBehaviour {
 	public int y;
 	public int z;
 
+	private float[] waveData_ = new float[1024];
+	private int[] waveData_1= new int[256];
+	public AudioClip audioClip;
+	public AudioSource audioSource;
+
 	public float Audiotime;
 	// Use this for initialization
 	void Start () {
@@ -20,12 +25,12 @@ public class SongScanbar2 : MonoBehaviour {
 		audioSource.Play();
 	}
 
-	private float[] waveData_ = new float[1024];
-	private int[] waveData_1= new int[256];
-	public AudioClip audioClip;
-	public AudioSource audioSource;
+
 	// Update is called once per frame
 	void Update () {
+
+
+
 		audioSource.GetOutputData(waveData_, 1);
 		var volume = waveData_.Select(x => x*x).Sum() / waveData_.Length*100;
 		//	transform.localScale = Vector3.one * volume * 20;
