@@ -8428,6 +8428,8 @@ GameObject:
   - 23: {fileID: 2097221698}
   - 65: {fileID: 2097221697}
   - 111: {fileID: 2097221696}
+  - 114: {fileID: 2097221700}
+  - 95: {fileID: 2097221701}
   m_Layer: 0
   m_Name: door
   m_TagString: SF_Door
@@ -8511,6 +8513,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2097221694}
   m_Mesh: {fileID: 4300004, guid: 65fb86f734ce568408b3eaad4fca1b60, type: 3}
+--- !u!114 &2097221700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2097221694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce99ad8f90220142be17028198227d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  result: {fileID: 1392301129}
+--- !u!95 &2097221701
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2097221694}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e839e5ab07c5e72469f3a971d7a92e6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2126770987
 GameObject:
   m_ObjectHideFlags: 0

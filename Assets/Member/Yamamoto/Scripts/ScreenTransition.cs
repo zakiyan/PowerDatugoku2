@@ -13,8 +13,8 @@ public class ScreenTransition : MonoBehaviour {
 	
 	}
 
-	public void ToTitle()
+	public void ToMainMenu()
 	{
-		Application.LoadLevel ("Title");
+		Application.LoadLevel ("MainMenu");
 	}
 }
