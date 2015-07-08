@@ -1623,7 +1623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87bd26bac0c3824e91cf4db1b73576f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 4
+  enemyHp: 4
   enemyPower: 1
 --- !u!1 &874072661
 GameObject:
@@ -5651,7 +5651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   maxHp: 10
-  hp: 10
+  playerHp: 10
   playerPower: 1
   speed: 5
   lvUpExp: 0
