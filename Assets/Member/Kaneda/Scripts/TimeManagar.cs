@@ -21,7 +21,7 @@ public class TimeManagar : MonoBehaviour {
 
 		TimeText.text = deltaTime.Minutes.ToString("D2") + ":" 
 			+ deltaTime.Seconds.ToString("D2")+ ":"
-			+ deltaTime.Milliseconds.ToString("D2");
+			+ deltaTime.Milliseconds.ToString("D3");
 
 //		TimeText.text =  ((int)(Timer/60)).ToString("00")+":" 
 //			+ (((int)Timer)%60).ToString("00") + ":"
