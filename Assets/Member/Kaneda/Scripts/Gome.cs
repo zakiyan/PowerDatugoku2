@@ -3,13 +3,14 @@ using System.Collections;
 
 public class Gome : MonoBehaviour {
 
-	// Use this for initialization
+	public string loadlevelName;
+
 	void Start () {
 		Invoke("GoMenu",2f);
 	
 	}
 	
 	void GoMenu(){
-		Application.LoadLevel("KMenu");
+		Application.LoadLevel(loadlevelName);
 	}
 }

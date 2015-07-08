@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Menu1 : MonoBehaviour {
 
+	public string loadLevelName;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,7 +16,7 @@ public class Menu1 : MonoBehaviour {
 
 	public void toMain(){
 
-		Application.LoadLevel("kfi5");
+		Application.LoadLevel(loadLevelName);
 		
 	}
 }
