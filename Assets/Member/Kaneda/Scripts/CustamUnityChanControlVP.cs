@@ -16,7 +16,7 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	
 	// 以下キャラクターコントローラ用パラメタ
 	// 前進速度
-	public float forwardSpeed = 7.0f;
+	public float forwardSpeed = 7.0f;//PlayerStatusから取ってくる
 	// 後退速度
 	public float backwardSpeed = 2.0f;
 	// 旋回速度
@@ -64,6 +64,9 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 		orgVectColCenter = col.center;
 
 		smallVirtualPad = FindObjectOfType<SmallVirtualPad>();
+
+		PlayerStatus playerstatus = GetComponent<PlayerStatus> ();
+		forwardSpeed = playerstatus.speed;
 	}
 	
 	
