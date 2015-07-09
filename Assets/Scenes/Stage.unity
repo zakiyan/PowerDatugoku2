@@ -3231,7 +3231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -6328,7 +6328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &635853361
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7072,7 +7072,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 3.81469727e-06, y: 60.0000076}
+  m_AnchoredPosition: {x: 3.00405809e-05, y: -20.0000038}
   m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &783974492
@@ -7087,7 +7087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -7462,12 +7462,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 874072661}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ab479e3f9a1c3e409aa104a44c466dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1208323345}
+  scoreText: {fileID: 1765156874}
   highScoreText: {fileID: 1902959436}
   totalScoreText: {fileID: 783974492}
   resultScoreText: {fileID: 302484126}
@@ -9942,7 +9942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1208323344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9957,7 +9957,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 3.81469727e-06, y: -19.9999924}
+  m_AnchoredPosition: {x: 3.81469727e-06, y: 60.0000038}
   m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1208323345
@@ -11833,9 +11833,9 @@ RectTransform:
   - {fileID: 520876435}
   m_Father: {fileID: 874072662}
   m_RootOrder: 3
-  m_AnchorMin: {x: 1, y: .5}
-  m_AnchorMax: {x: 1, y: .5}
-  m_AnchoredPosition: {x: -57.2000122, y: 0}
+  m_AnchorMin: {x: 0, y: .5}
+  m_AnchorMax: {x: 0, y: .5}
+  m_AnchoredPosition: {x: 50.0001221, y: 3.39746475e-06}
   m_SizeDelta: {x: 100, y: 200}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1454474636
@@ -11897,7 +11897,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 1
 --- !u!222 &1454474639
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12577,7 +12577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -14848,7 +14848,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 12345678901
+  m_Text: 0
 --- !u!222 &1765156875
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15527,8 +15527,7 @@ GameObject:
 --- !u!114 &1851283208
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11413728, guid: 41de9b7bd5df9f54c8b2b1ef171910af,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1851283207}
   m_Enabled: 1
@@ -15536,6 +15535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27876d66fcca5b44880bf963ba2ae01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLvText: {fileID: 1454474638}
   level: 1
   maxHp: 10
   playerHp: 10
@@ -15910,7 +15910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
