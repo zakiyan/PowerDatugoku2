@@ -476,7 +476,7 @@ Transform:
   - {fileID: 1106064170}
   - {fileID: 1519832245}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!114 &10528738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20943,6 +20943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHp: 4
   enemyPower: 1
+  testPlaerAttack: 0
 --- !u!1 &858432770
 GameObject:
   m_ObjectHideFlags: 0
@@ -23592,7 +23593,7 @@ Transform:
   - {fileID: 1416554801}
   - {fileID: 736772336}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!114 &914924043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32479,7 +32480,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
 --- !u!1 &1265204916
 GameObject:
   m_ObjectHideFlags: 0
@@ -38389,7 +38390,7 @@ Transform:
   m_LocalScale: {x: .747500002, y: .747500002, z: .747500002}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
 --- !u!4 &1519832245 stripped
 Transform:
   m_PrefabParentObject: {fileID: 493228, guid: 71fb6a6b2cdf02e4586e79a864b31aa0, type: 2}
@@ -47909,7 +47910,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &1851283210
 CapsuleCollider:
@@ -50591,7 +50592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!1 &1981057156
 GameObject:
   m_ObjectHideFlags: 0
