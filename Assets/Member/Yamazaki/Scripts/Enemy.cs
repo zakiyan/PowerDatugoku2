@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour {
 		agent = GetComponent<NavMeshAgent> ();
 		animator = GetComponentInChildren<Animator> ();
 
+		agent.speed = walkSpeed;
+
 		if (wayPoints.Length == 0 || !wayPoints[0]) {
 			initialDirection = transform.position;
 		}
@@ -58,10 +60,12 @@ public class Enemy : MonoBehaviour {
 						//エンカウント距離内に入った
 						hasPatrol = false;
 						agent.speed = runSpeed;
+						animator.SetBool("Angry",true);
 						countTime = 0f;
 					} else {
 						if (!hasPatrol) {
 							hasPatrol = false;
+							animator.SetBool("Angry",true);
 							countTime = 0f;
 						}
 					}
@@ -84,6 +88,7 @@ public class Enemy : MonoBehaviour {
 			//逃げ判定距離外に出た
 			hasPatrol = true;
 			agent.speed = walkSpeed;
+			animator.SetBool("Angry",false);
 			currentRoot = 0;
 			countTime = 0f;
 		}
@@ -108,7 +113,5 @@ public class Enemy : MonoBehaviour {
 			agent.destination = target.transform.position;
 		}
 
-		animator.SetFloat ("Speed", agent.velocity.magnitude);
-	
 	}
 }
