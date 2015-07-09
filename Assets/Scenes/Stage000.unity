@@ -15428,6 +15428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27876d66fcca5b44880bf963ba2ae01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLvText: {fileID: 0}
   level: 1
   maxHp: 10
   playerHp: 10
