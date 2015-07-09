@@ -6,7 +6,9 @@ public class Goal : MonoBehaviour {
 	Animator anim;
 	Score score;
 	public GameObject result;
-
+	
+	public static bool isGoal = false;
+	
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -21,6 +23,7 @@ public class Goal : MonoBehaviour {
 	{
 		result.SetActive (true);
 		score.Save ();
+		isGoal = true;
 		Debug.Log ("Goal");
 		anim.SetBool ("Touch", true);
 	}

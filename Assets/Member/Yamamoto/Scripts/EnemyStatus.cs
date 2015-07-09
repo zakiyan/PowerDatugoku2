@@ -10,12 +10,16 @@ public class EnemyStatus : MonoBehaviour {
 	public float enemyHp = 4;
 	public float enemyPower = 1;
 
+	public float testPlaerAttack;
+
 	// Use this for initialization
 	void Start () {
 
 		score = FindObjectOfType<Score>();
 		playerStatus = FindObjectOfType<PlayerStatus>();
 		anim = GetComponent<Animator> ();
+
+		testPlaerAttack =playerStatus.playerPower;
 
 	}
 	
@@ -26,6 +30,7 @@ public class EnemyStatus : MonoBehaviour {
 
 	void OnTriggerEnter(Collider c)
 	{
+		Debug.Log("当たってる！！！！");
 		string layerName = LayerMask.LayerToName (c.gameObject.layer);
 
 		if (layerName == "PlayerAttack") {
