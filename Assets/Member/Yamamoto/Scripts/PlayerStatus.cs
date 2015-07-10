@@ -7,6 +7,7 @@ public class PlayerStatus : MonoBehaviour {
 	EnemyStatus enemyStatus;
 	Score score;
 	public Text playerLvText;
+	public UserHP userHP;
 	
 	public int level = 1;
 	public int maxHp = 10;
@@ -20,26 +21,33 @@ public class PlayerStatus : MonoBehaviour {
 		
 		enemyStatus = FindObjectOfType<EnemyStatus> ();
 		score = FindObjectOfType<Score> ();
+
+		while (true) {
+			lvUpExp = (int)(Mathf.Pow (2, level - 1) * 100);
+			
+			if (lvUpExp <= score.GetExp ()) {
+				
+				level += 1;
+				maxHp += 2;
+				playerHp = maxHp;
+				playerPower += 0.2f;
+				if (level % 2 == 0) {
+					speed += 1f;
+				}
+			}
+			else
+			{
+				break;
+			}
+		}
+		playerLvText.text = level.ToString ();
+		
+		HpView ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-		lvUpExp = (int)(Mathf.Pow(2, level - 1) * 100);
-		
-		if (lvUpExp <= score.GetExp ()) {
-			
-			level += 1;
-			maxHp += 2;
-			playerHp = maxHp;
-			playerPower += 0.2f;
-			if(level % 2 == 0)
-			{
-				speed += 1f;
-			}
-		}
-		
-		playerLvText.text = level.ToString ();
 	}
 	
 	void OnTriggerEnter(Collider c)
@@ -49,11 +57,20 @@ public class PlayerStatus : MonoBehaviour {
 		if (layerName == "EnemyAttack") {
 			
 			playerHp -= enemyStatus.enemyPower;
+
+			HpView();
 			
 			if (playerHp <= 0) {
 				
 				Destroy (gameObject);
+				//gameOver.SetActive (true);
 			}
 		}
+	}
+
+	void HpView()
+	{
+		userHP.SetEnemyLife (playerHp, maxHp);
+		userHP.SetUserHPGradually (playerHp, maxHp);
 	}
 }
