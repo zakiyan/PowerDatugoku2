@@ -6742,7 +6742,7 @@ GameObject:
   - 4: {fileID: 672552315}
   - 135: {fileID: 672552316}
   m_Layer: 10
-  m_Name: LPAtack
+  m_Name: LPAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7395,7 +7395,7 @@ GameObject:
   - 4: {fileID: 797616888}
   - 135: {fileID: 797616889}
   m_Layer: 10
-  m_Name: LKAtack
+  m_Name: LKAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7920,6 +7920,9 @@ MonoBehaviour:
   backwardSpeed: 2
   rotateSpeed: 2
   jumpPower: 3
+  LPAttack: {fileID: 672552314}
+  RPAttack: {fileID: 1792178418}
+  LKAttack: {fileID: 797616887}
 --- !u!1 &925142416
 GameObject:
   m_ObjectHideFlags: 0
@@ -15435,7 +15438,7 @@ GameObject:
   - 4: {fileID: 1792178419}
   - 135: {fileID: 1792178420}
   m_Layer: 10
-  m_Name: RPAtack
+  m_Name: RPAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

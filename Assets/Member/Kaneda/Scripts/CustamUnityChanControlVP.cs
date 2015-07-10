@@ -41,6 +41,10 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	bool jumpEnd = false;
 
 	SmallVirtualPad smallVirtualPad;
+
+	public GameObject LPAttack;
+	public GameObject RPAttack;
+	public GameObject LKAttack;
 	
 	// アニメーター各ステートへの参照
 	static int idleState = Animator.StringToHash ("Base Layer.Idle");
@@ -48,6 +52,8 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	static int jumpState = Animator.StringToHash ("Base Layer.Jump");
 	static int restState = Animator.StringToHash ("Base Layer.Rest");
 	static int punchState = Animator.StringToHash ("Base Layer.Punch");
+
+	public static bool isGetKey = false;
 	
 	// 初期化
 	void Start ()
@@ -216,5 +222,35 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 		anim.SetBool("Punch",false);
 		anim.SetBool("Punch2",false);
 		anim.SetBool("Kick",false);
+	}
+
+	void PunchStart()
+	{
+		LPAttack.SetActive (true);
+	}
+
+	void PunchEnd()
+	{
+		LPAttack.SetActive (false);
+	}
+
+	void PunchStart2()
+	{
+		RPAttack.SetActive (true);
+	}
+	
+	void PunchEnd2()
+	{
+		RPAttack.SetActive (false);
+	}
+
+	void KickStart()
+	{
+		LKAttack.SetActive (true);
+	}
+	
+	void KickEnd()
+	{
+		LKAttack.SetActive (false);
 	}
 }
