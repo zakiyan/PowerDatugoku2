@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour {
 	bool hasPatrol = true;
 
 	Vector3 initialDirection;
+	Quaternion initialQuaternion;
 
 	// Use this for initialization
 	void Start () {
@@ -35,6 +36,7 @@ public class Enemy : MonoBehaviour {
 
 		if (wayPoints.Length == 0 || !wayPoints[0]) {
 			initialDirection = transform.position;
+			initialQuaternion = transform.rotation;
 		}
 
 	}
@@ -98,6 +100,10 @@ public class Enemy : MonoBehaviour {
 
 			if (wayPoints.Length == 0 || !wayPoints[0]) {
 				agent.SetDestination (initialDirection);
+
+				if (Vector3.Distance (transform.position, initialDirection) < 1f) {
+					transform.rotation = Quaternion.Slerp(transform.rotation,initialQuaternion,0.1f);
+				}
 			}else{
 
 				Vector3 pos = wayPoints [currentRoot].position;
@@ -113,5 +119,6 @@ public class Enemy : MonoBehaviour {
 			agent.destination = target.transform.position;
 		}
 
+		animator.SetFloat("Speed",agent.velocity.magnitude);
 	}
 }
