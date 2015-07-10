@@ -7,7 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 
 public class CustamUnityChanControlVP : MonoBehaviour {
-
+	private AudioSource sound01;
 	public float animSpeed = 1.5f;				// アニメーション再生速度設定
 	public float lookSmoother = 3.0f;			// a smoothing setting for camera motion
 	public bool useCurves = true;				// Mecanimでカーブ調整を使うか設定する
@@ -58,6 +58,7 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	// 初期化
 	void Start ()
 	{
+		sound01 = GetComponent<AudioSource>();
 		// Animatorコンポーネントを取得する
 		anim = GetComponent<Animator> ();
 		// CapsuleColliderコンポーネントを取得する（カプセル型コリジョン）
@@ -195,10 +196,13 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	public void Punch()
 	{
 		if (!anim.GetBool ("Punch")) {
+			sound01.PlayOneShot(sound01.clip);
 			anim.SetBool ("Punch", true);
 		} else if (!anim.GetBool ("Punch2")) {
+			sound01.PlayOneShot(sound01.clip);
 			anim.SetBool ("Punch2", true);
 		} else {
+			sound01.PlayOneShot(sound01.clip);
 			anim.SetBool ("Kick", true);
 		}
 
