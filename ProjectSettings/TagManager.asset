@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - SF_Door
   layers:
   - Default
   - TransparentFX
@@ -18,7 +17,7 @@ TagManager:
   - Marker
   - sound
   - PlayerAttack
-  - Enemy
+  - 
   - 
   - 
   - 
