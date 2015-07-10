@@ -7,7 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 
 public class CustamUnityChanControlVP : MonoBehaviour {
-
+	private AudioSource sound01;
 	public float animSpeed = 1.5f;				// アニメーション再生速度設定
 	public float lookSmoother = 3.0f;			// a smoothing setting for camera motion
 	public bool useCurves = true;				// Mecanimでカーブ調整を使うか設定する
@@ -41,6 +41,10 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	bool jumpEnd = false;
 
 	SmallVirtualPad smallVirtualPad;
+
+	public GameObject LPAttack;
+	public GameObject RPAttack;
+	public GameObject LKAttack;
 	
 	// アニメーター各ステートへの参照
 	static int idleState = Animator.StringToHash ("Base Layer.Idle");
@@ -48,10 +52,13 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	static int jumpState = Animator.StringToHash ("Base Layer.Jump");
 	static int restState = Animator.StringToHash ("Base Layer.Rest");
 	static int punchState = Animator.StringToHash ("Base Layer.Punch");
+
+	public static bool isGetKey = false;
 	
 	// 初期化
 	void Start ()
 	{
+		sound01 = GetComponent<AudioSource>();
 		// Animatorコンポーネントを取得する
 		anim = GetComponent<Animator> ();
 		// CapsuleColliderコンポーネントを取得する（カプセル型コリジョン）
@@ -189,10 +196,13 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 	public void Punch()
 	{
 		if (!anim.GetBool ("Punch")) {
+			sound01.PlayOneShot(sound01.clip);
 			anim.SetBool ("Punch", true);
 		} else if (!anim.GetBool ("Punch2")) {
+			sound01.PlayOneShot(sound01.clip);
 			anim.SetBool ("Punch2", true);
 		} else {
+			sound01.PlayOneShot(sound01.clip);
 			anim.SetBool ("Kick", true);
 		}
 
@@ -216,5 +226,35 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 		anim.SetBool("Punch",false);
 		anim.SetBool("Punch2",false);
 		anim.SetBool("Kick",false);
+	}
+
+	void PunchStart()
+	{
+		LPAttack.SetActive (true);
+	}
+
+	void PunchEnd()
+	{
+		LPAttack.SetActive (false);
+	}
+
+	void PunchStart2()
+	{
+		RPAttack.SetActive (true);
+	}
+	
+	void PunchEnd2()
+	{
+		RPAttack.SetActive (false);
+	}
+
+	void KickStart()
+	{
+		LKAttack.SetActive (true);
+	}
+	
+	void KickEnd()
+	{
+		LKAttack.SetActive (false);
 	}
 }
