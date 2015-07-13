@@ -34,12 +34,13 @@ public class EnemyStatus : MonoBehaviour {
 
 	void OnTriggerEnter(Collider c)
 	{
-		Debug.Log("当たってる！！！！");
+
 		string layerName = LayerMask.LayerToName (c.gameObject.layer);
 
 		if (layerName == "PlayerAttack") {
 
 			enemyHp -= playerStatus.playerPower;
+			Debug.Log("当たってる！！！！");
 
 			if (enemyHp <= 0) {
 				sound02.PlayOneShot(sound02.clip);
