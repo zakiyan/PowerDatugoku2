@@ -9,6 +9,8 @@ public class TimeManagar : MonoBehaviour {
 	public Text TimeText;
 	private float Timer = 0f;
 	private float fastTime;
+	public Text resultTimeTxet;
+
 	private System.TimeSpan deltaTime;
 	private System.DateTime deltaTime2;
 
@@ -57,6 +59,10 @@ public class TimeManagar : MonoBehaviour {
 				+ (Mathf.Floor (Timer * 1000) - (((int)Timer) * 1000)).ToString ("0,0,0");
 		} else 
 		{
+			resultTimeTxet.text = ((int)(Timer / 60)).ToString ("00") + ":" 
+				+ (((int)Timer) % 60).ToString ("00") + ":"
+					+ (Mathf.Floor (Timer * 1000) - (((int)Timer) * 1000)).ToString ("0,0,0");
+
 			if(fastTime>Timer)
 			{
 				PlayerPrefs.SetFloat("FastTimeKey",Timer);

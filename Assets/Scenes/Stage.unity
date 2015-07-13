@@ -3614,8 +3614,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   result: {fileID: 1392301129}
   KeyGetMesseageObj: {fileID: 427604091}
-  GoGoalMesseageObj: {fileID: 0}
-  bgAttention: {fileID: 0}
+  GoGoalMesseageObj: {fileID: 766280007}
+  bgAttention: {fileID: 1640633058}
 --- !u!111 &414433461
 Animation:
   m_ObjectHideFlags: 0
@@ -15523,7 +15523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1640633059
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18196,6 +18196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeText: {fileID: 1824594828}
+  resultTimeTxet: {fileID: 1767643158}
 --- !u!4 &1980982407
 Transform:
   m_ObjectHideFlags: 0
