@@ -7,6 +7,7 @@ public class Goal : MonoBehaviour {
 	Score score;
 	public GameObject result;
 	public GameObject KeyGetMesseageObj;
+	public GameObject bgAttention;
 	
 	public static bool isGoal = false;
 	
@@ -29,6 +30,7 @@ public class Goal : MonoBehaviour {
 			Debug.Log ("Goal");
 			anim.SetBool ("Touch", true);
 		} else {
+			bgAttention.SetActive(true);
 			KeyGetMesseageObj.SetActive(true);//鍵を持っていないときのメッセージ表示
 			Invoke("MesseageObj",2f);//二秒後に消す
 		}
@@ -37,6 +39,6 @@ public class Goal : MonoBehaviour {
 	void MesseageObj()
 	{
 		KeyGetMesseageObj.SetActive (false);
-
+		bgAttention.SetActive(false);
 	}
 }

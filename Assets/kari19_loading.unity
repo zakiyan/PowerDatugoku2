@@ -3016,9 +3016,6 @@ MonoBehaviour:
   backwardSpeed: 2
   rotateSpeed: 2
   jumpPower: 3
-  LPAttack: {fileID: 0}
-  RPAttack: {fileID: 0}
-  LKAttack: {fileID: 0}
 --- !u!1 &943914076
 GameObject:
   m_ObjectHideFlags: 0
@@ -5134,7 +5131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1616431027
 Animator:
   serializedVersion: 3
