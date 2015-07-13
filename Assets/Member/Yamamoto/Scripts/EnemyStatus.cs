@@ -55,7 +55,10 @@ public class EnemyStatus : MonoBehaviour {
 				if(remainEnemyNum <= 0)
 				{
 					CustamUnityChanControlVP.isGetKey = true;}
-
+				GameObject bgAttention = GameObject.Find("CanvasAttention/bgAttention");
+				GameObject childObject = bgAttention.transform.FindChild("TextGoExit").gameObject;
+				bgAttention.SetActive(true);
+				childObject.SetActive(true);
 			}
 		}
 	}
