@@ -7,7 +7,9 @@ public class Goal : MonoBehaviour {
 	Score score;
 	public GameObject result;
 	public GameObject KeyGetMesseageObj;
+	public GameObject GoGoalMesseageObj;
 	public GameObject bgAttention;
+	 
 	
 	public static bool isGoal = false;
 	
@@ -15,15 +17,26 @@ public class Goal : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator>();
 		score = FindObjectOfType<Score> ();
+
+
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		if (CustamUnityChanControlVP.isGetKey == true && isGoal == false)
+		{
+			bgAttention.SetActive(true);
+			GoGoalMesseageObj.SetActive(true);
+		}
 	}
 	void OnCollisionEnter(Collision c)
 	{
 		if (CustamUnityChanControlVP.isGetKey == true) {
+
+			bgAttention.SetActive(false);
+			GoGoalMesseageObj.SetActive(false);
 			result.SetActive (true);
 			score.Save ();
 			isGoal = true;

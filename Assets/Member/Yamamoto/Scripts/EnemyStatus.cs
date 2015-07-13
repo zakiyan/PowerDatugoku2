@@ -8,6 +8,7 @@ public class EnemyStatus : MonoBehaviour {
 	PlayerStatus playerStatus;
 	Animator anim;
 	private AudioSource sound02;
+
 	public float enemyHp = 4;
 	public float enemyPower = 1;
 
@@ -20,7 +21,7 @@ public class EnemyStatus : MonoBehaviour {
 		sound02 = GetComponent<AudioSource>();
 		score = FindObjectOfType<Score>();
 		playerStatus = FindObjectOfType<PlayerStatus>();
-		anim = GetComponent<Animator> ();
+		anim = transform.FindChild("Zato1").GetComponent<Animator> ();
 
 		testPlaerAttack =playerStatus.playerPower;
 
@@ -52,19 +53,16 @@ public class EnemyStatus : MonoBehaviour {
 				var gos = GameObject.FindGameObjectsWithTag("Enemy");
 				remainEnemyNum = gos.Length;
 				Debug.Log(remainEnemyNum);
-				if(remainEnemyNum <= 0)
+				if(remainEnemyNum <= 1)
 				{
-					CustamUnityChanControlVP.isGetKey = true;}
-				GameObject bgAttention = GameObject.Find("CanvasAttention/bgAttention");
-				GameObject childObject = bgAttention.transform.FindChild("TextGoExit").gameObject;
-				bgAttention.SetActive(true);
-				childObject.SetActive(true);
+					CustamUnityChanControlVP.isGetKey = true;
+				}
 			}
 		}
 	}
 
 	void EnemyDestroy()
 	{
-		Destroy (this);
+		Destroy (gameObject);
 	}
 }
