@@ -7,7 +7,10 @@ public class PlayerStatus : MonoBehaviour {
 	EnemyStatus enemyStatus;
 	Score score;
 	public Text playerLvText;
+	public Text playerLvResultText;
 	public UserHP userHP;
+	public GameObject result;
+	public GameObject gameOverText;
 	
 	public int level = 1;
 	public int maxHp = 10;
@@ -15,6 +18,8 @@ public class PlayerStatus : MonoBehaviour {
 	public float playerPower = 1f;
 	public float speed = 5f;
 	public int lvUpExp = 0;
+
+	private string levelKey = "level";
 
 	private Animator anim;
 	
@@ -25,25 +30,7 @@ public class PlayerStatus : MonoBehaviour {
 		enemyStatus = FindObjectOfType<EnemyStatus> ();
 		score = FindObjectOfType<Score> ();
 
-		while (true) {
-			lvUpExp = (int)(Mathf.Pow (2, level - 1) * 100);
-			
-			if (lvUpExp <= score.GetExp ()) {
-				
-				level += 1;
-				maxHp += 2;
-				playerHp = maxHp;
-				playerPower += 0.2f;
-				if (level % 2 == 0) {
-					speed += 1f;
-				}
-			}
-			else
-			{
-				break;
-			}
-		}
-		playerLvText.text = level.ToString ();
+		LevelUp ();
 		
 		HpView ();
 	}
@@ -70,9 +57,43 @@ public class PlayerStatus : MonoBehaviour {
 			if (playerHp <= 0) {
 				
 				anim.SetBool ("Down", true);
-				//gameOver.SetActive (true);
+				result.SetActive (true);
+				gameOverText.SetActive (true);
+				score.Save ();
+				LevelUp ();
+				level = PlayerPrefs.GetInt (levelKey, 1);
+				playerLvResultText.text = level.ToString();
 			}
 		}
+	}
+
+	public void LevelUp()
+	{
+		while (true) {
+			lvUpExp = (int)(Mathf.Pow (2, level - 1) * 100);
+			
+			if (lvUpExp <= score.GetExp ()) {
+				
+				level += 1;
+				maxHp += 2;
+				playerHp = maxHp;
+				playerPower += 0.2f;
+				if (level % 2 == 0) {
+					speed += 1f;
+				}
+			}
+			else
+			{
+				break;
+			}
+		}
+		playerLvText.text = level.ToString ();
+		PlayerPrefs.SetInt (levelKey, level);
+	}
+
+	public void LevelSave()
+	{
+		PlayerPrefs.SetInt (levelKey, level);
 	}
 
 	void HpView()

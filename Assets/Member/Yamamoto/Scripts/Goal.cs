@@ -5,7 +5,9 @@ public class Goal : MonoBehaviour {
 
 	Animator anim;
 	Score score;
+	PlayerStatus playerStatus;
 	public GameObject result;
+	public GameObject clearedText;
 	public GameObject KeyGetMesseageObj;
 	public GameObject GoGoalMesseageObj;
 	public GameObject bgAttention;
@@ -17,9 +19,7 @@ public class Goal : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator>();
 		score = FindObjectOfType<Score> ();
-
-
-
+		playerStatus = FindObjectOfType<PlayerStatus> ();
 	}
 	
 	// Update is called once per frame
@@ -42,6 +42,7 @@ public class Goal : MonoBehaviour {
 			isGoal = true;
 			Debug.Log ("Goal");
 			anim.SetBool ("Touch", true);
+			playerStatus.LevelUp ();
 		} else {
 			bgAttention.SetActive(true);
 			KeyGetMesseageObj.SetActive(true);//鍵を持っていないときのメッセージ表示
