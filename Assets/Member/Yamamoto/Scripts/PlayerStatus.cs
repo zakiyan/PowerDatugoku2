@@ -40,7 +40,7 @@ public class PlayerStatus : MonoBehaviour {
 	{
 		if (Goal.isGoal == true)
 		{
-			anim.SetBool ("Goal", true);
+			playerHp = maxHp;
 		}
 	}
 	
@@ -60,6 +60,7 @@ public class PlayerStatus : MonoBehaviour {
 				result.SetActive (true);
 				gameOverText.SetActive (true);
 				score.Save ();
+				Goal.isGoal = true;
 				LevelUp ();
 				level = PlayerPrefs.GetInt (levelKey, 1);
 				playerLvResultText.text = level.ToString();

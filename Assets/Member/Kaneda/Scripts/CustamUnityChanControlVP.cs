@@ -94,6 +94,9 @@ public class CustamUnityChanControlVP : MonoBehaviour {
 		Vector3 forward = cameraYZ.transform.TransformDirection(Vector3.forward);
 		Vector3 right = cameraYZ.transform.TransformDirection(Vector3.right); 
 		Vector3 moveDirection = h * right + v * forward;
+		if (Goal.isGoal == true) {
+			moveDirection = Vector3.zero;
+		}
 
 		anim.SetFloat ("Speed", moveDirection.magnitude);							// Animator側で設定している"Speed"パラメタにvを渡す
 		anim.SetFloat ("Direction", 0); 						// Animator側で設定している"Direction"パラメタにhを渡す
