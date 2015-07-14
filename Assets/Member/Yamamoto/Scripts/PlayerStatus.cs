@@ -15,9 +15,12 @@ public class PlayerStatus : MonoBehaviour {
 	public float playerPower = 1f;
 	public float speed = 5f;
 	public int lvUpExp = 0;
+
+	private Animator anim;
 	
 	// Use this for initialization
 	void Start () {
+		anim = GetComponent<Animator> ();
 		
 		enemyStatus = FindObjectOfType<EnemyStatus> ();
 		score = FindObjectOfType<Score> ();
@@ -46,8 +49,12 @@ public class PlayerStatus : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+	{
+		if (Goal.isGoal == true)
+		{
+			anim.SetBool ("Goal", true);
+		}
 	}
 	
 	void OnTriggerEnter(Collider c)
@@ -62,7 +69,7 @@ public class PlayerStatus : MonoBehaviour {
 			
 			if (playerHp <= 0) {
 				
-				Destroy (gameObject);
+				anim.SetBool ("Down", true);
 				//gameOver.SetActive (true);
 			}
 		}
