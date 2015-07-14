@@ -20,6 +20,7 @@ public class PlayerStatus : MonoBehaviour {
 	public int lvUpExp = 0;
 
 	private string levelKey = "level";
+	private string playerHpKey = "playerHp";
 
 	private Animator anim;
 	
@@ -90,6 +91,7 @@ public class PlayerStatus : MonoBehaviour {
 		}
 		playerLvText.text = level.ToString ();
 		PlayerPrefs.SetInt (levelKey, level);
+		PlayerPrefs.SetInt (playerHpKey, maxHp);
 	}
 
 	public void LevelSave()

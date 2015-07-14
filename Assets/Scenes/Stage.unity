@@ -7835,15 +7835,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 453990, guid: 41de9b7bd5df9f54c8b2b1ef171910af, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.30000019
+      value: 15.0500002
       objectReference: {fileID: 0}
     - target: {fileID: 453990, guid: 41de9b7bd5df9f54c8b2b1ef171910af, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .202000007
+      value: 4.26000023
       objectReference: {fileID: 0}
     - target: {fileID: 453990, guid: 41de9b7bd5df9f54c8b2b1ef171910af, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -23.3099995
+      value: -8.31999969
       objectReference: {fileID: 0}
     - target: {fileID: 453990, guid: 41de9b7bd5df9f54c8b2b1ef171910af, type: 2}
       propertyPath: m_LocalRotation.x
@@ -11673,12 +11673,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441ae8d55a0a3af4fb24e99e9d6f9bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 5
+  distance: 2
   horizontalAngle: 0
   rotAngle: 180
   verticalAngle: 10
   lookTarget: {fileID: 914924041}
-  offset: {x: 0, y: 1.5, z: 0}
+  offset: {x: 0, y: 1.79999995, z: 0}
 --- !u!1 &1192578484
 GameObject:
   m_ObjectHideFlags: 0
@@ -15693,7 +15693,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100/100
+  m_Text: 10/10
 --- !u!222 &1657557499
 CanvasRenderer:
   m_ObjectHideFlags: 0
